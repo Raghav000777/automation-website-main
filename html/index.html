@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <style>
+      /* Basic styling for the paragraph */
+      .styled-paragraph {
+        font-size: 16px;
+        color: #333;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Bootstrap Template Atlas</title>
+    <meta name="description" content="Free bootstrap template Atlas" />
+    <link rel="icon" href="../img/favicon.png" sizes="32x32" type="image/png" />
+    <!-- custom.css -->
+    <link rel="stylesheet" href="../css/custom.css" />
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="../css/aos.css" />
+    <!-- Start VWO Async SmartCode -->
+    <script type="text/javascript" id="vwoCode">
+      window._vwo_code =
+        window._vwo_code ||
+        (function () {
+          var account_id = 814397,
+            version = 1.5,
+            settings_tolerance = 2000,
+            library_tolerance = 2500,
+            use_existing_jquery = false,
+            is_spa = 1,
+            hide_element = "body",
+            hide_element_style =
+              "opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important",
+            /* DO NOT EDIT BELOW THIS LINE */
+            f = false,
+            d = document,
+            vwoCodeEl = d.querySelector("#vwoCode"),
+            code = {
+              use_existing_jquery: function () {
+                return use_existing_jquery;
+              },
+              library_tolerance: function () {
+                return library_tolerance;
+              },
+              hide_element_style: function () {
+                return "{" + hide_element_style + "}";
+              },
+              finish: function () {
+                if (!f) {
+                  f = true;
+                  var e = d.getElementById("_vis_opt_path_hides");
+                  if (e) e.parentNode.removeChild(e);
+                }
+              },
+              finished: function () {
+                return f;
+              },
+              load: function (e) {
+                var t = d.createElement("script");
+                t.fetchPriority = "high";
+                t.src = e;
+                t.type = "text/javascript";
+                t.onerror = function () {
+                  _vwo_code.finish();
+                };
+                d.getElementsByTagName("head")[0].appendChild(t);
+              },
+              getVersion: function () {
+                return version;
+              },
+              getMatchedCookies: function (e) {
+                var t = [];
+                if (document.cookie) {
+                  t = document.cookie.match(e) || [];
+                }
+                return t;
+              },
+              getCombinationCookie: function () {
+                var e = code.getMatchedCookies(
+                  /(?:^|;)\s?(_vis_opt_exp_\d+_combi=[^;$]*)/gi
+                );
+                e = e.map(function (e) {
+                  try {
+                    var t = decodeURIComponent(e);
+                    if (!/_vis_opt_exp_\d+_combi=(?:\d+,?)+\s*$/.test(t)) {
+                      return "";
+                    }
+                    return t;
+                  } catch (e) {
+                    return "";
+                  }
+                });
+                var i = [];
+                e.forEach(function (e) {
+                  var t = e.match(/([\d,]+)/g);
+                  t && i.push(t.join("-"));
+                });
+                return i.join("|");
+              },
+              init: function () {
+                if (d.URL.indexOf("__vwo_disable__") > -1) return;
+                window.settings_timer = setTimeout(function () {
+                  _vwo_code.finish();
+                }, settings_tolerance);
+                var e = d.createElement("style"),
+                  t = hide_element
+                    ? hide_element + "{" + hide_element_style + "}"
+                    : "",
+                  i = d.getElementsByTagName("head")[0];
+                e.setAttribute("id", "_vis_opt_path_hides");
+                vwoCodeEl && e.setAttribute("nonce", vwoCodeEl.nonce);
+                e.setAttribute("type", "text/css");
+                if (e.styleSheet) e.styleSheet.cssText = t;
+                else e.appendChild(d.createTextNode(t));
+                i.appendChild(e);
+                var n = this.getCombinationCookie();
+                this.load(
+                  "https://dev.visualwebsiteoptimizer.com/j.php?a=" +
+                    account_id +
+                    "&u=" +
+                    encodeURIComponent(d.URL) +
+                    "&f=" +
+                    +is_spa +
+                    "&vn=" +
+                    version +
+                    (n ? "&c=" + n : "")
+                );
+                return settings_timer;
+              },
+            };
+          window._vwo_settings_timer = code.init();
+          return code;
+        })();
+      _vwo_pc_custom = {
+        a: 100,
+        t: 100,
+      };
+      var jsVar = 1;
+      var jaVar = "false";
+      document.cookie = "firstName=abc";
+      //       window._vwo_settings_timer = code.init();
+      //       return code;
+      //     })();
+      // _vwo_pc_custom = {
+      //   a: 100,
+      //   t: 100,
+      // };
+    </script>
+    <!-- End VWO Async SmartCode -->
+    <!-- Start VWO SmartCode -->
+    <!-- <script referrerPolicy="no-referrer-when-downgrade" src="https://dev.visualwebsiteoptimizer.com/lib/8000017.js" id="vwoCode"></script>  -->
+    <!-- End VWO SmartCode -->
+  </head>
+
+  <body>
+    <!-- banner -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="banner"
+      style="background-image: url(img/banner-bk.jpg)"
+    >
+      <div class="container text-center text-md-left">
+        <header>
+          <div class="row justify-content-between">
+            <div class="col-2">
+              <img src="img/logo.png" alt="logo" id="logo" />
+            </div>
+            <div class="col-6 align-self-center text-right">
+              <a href="#" class="text-white lead" id="earlyaccess"
+                >Get Early Access</a
+              >
+            </div>
+          </div>
+        </header>
+        <h1
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="display-3 text-white font-weight-bold my-5"
+        >
+          A New Way<br />
+          To Start Business
+        </h1>
+        <p
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="lead text-white my-4"
+        >
+          Lorem ipsum dolor sit amet, id nec enim autem oblique, ei dico
+          mentitum duo.
+          <br />
+          Illum iusto laoreet his te. Lorem partiendo mel ex. Ad vitae admodum
+          voluptatum per.
+        </p>
+        <a
+          id="getStarted"
+          href="#"
+          data-aos="fade"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="btn my-4 font-weight-bold atlas-cta cta-green"
+          >Get Started</a
+        >
+      </div>
+    </div>
+    <!-- Valid scenarios -->
+    <div id="element1" class="validClass">Valid ID and Class</div>
+
+    <!-- Alphanumeric -->
+    <div id="element2" class="alpha123">Alphanumeric ID and Class</div>
+
+    <!-- Numeric only -->
+    <div id="element3" class="456">Numeric ID and Class</div>
+
+    <!-- Alphabets only -->
+    <div id="element4" class="abc">Alphabets ID and Class</div>
+
+    <!-- Underscore in ID and Class -->
+    <div id="element5_with_underscore" class="class_with_underscore">
+      ID and Class with Underscore
+    </div>
+
+    <!-- At the rate (@) in ID and Class -->
+    <div id="element6@special" class="class@with@rate">ID and Class with @</div>
+
+    <!-- Starting with a number -->
+    <div id="4element" class="starts_with_number">
+      ID and Class Starting with a Number
+    </div>
+
+    <!-- Alphanumeric with special characters -->
+    <div id="element7_alpha#123" class="alphanumeric&special">
+      Alphanumeric ID and Class with # and &
+    </div>
+
+    <!-- Hyphen in ID and Class -->
+    <div id="element8-with-hyphen" class="class-with-hyphen">
+      ID and Class with Hyphen
+    </div>
+
+    <!-- Exclamation mark (!) in ID and Class -->
+    <div id="element9!special" class="class!with!exclamation">
+      ID and Class with !
+    </div>
+    <img
+      src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg"
+      crossorigin="anonymous"
+    />
+
+    <div class="custom-div">This is a styled div.</div>
+    <div class="hover_bkgr_fricc">
+      <span class="helper"></span>
+      <div class="hover_bkgr_fricc_inner">
+        <div class="popupCloseButton">X</div>
+        <div class="pop-txt">
+          <div class="pop-txt-prod">
+            Didn&apos;t find what you&apos;re looking for?
+          </div>
+          <div class="pop-txt-off">
+            <div class="popupheading">
+              Access our entire <br /><span>Foodservice reports library</span>
+            </div>
+            <div class="popup_right"></div>
+          </div>
+        </div>
+        <a
+          class="cta_link"
+          href="https://www.mordorintelligence.com/hubs/foodservice#list-of-reports"
+          target="_blank"
+          ><div class="cta_btn">Access Foodservice Library</div></a
+        >
+      </div>
+    </div>
+    <div id="myModal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5);">
+      <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+        <span style="border: none; padding: 20px 15px; background-color: #f44336; color: #fff; font-weight: bold; float: right; cursor: pointer;" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+        <h2 style="border: none; padding: 20px; border-bottom: 1px solid #ccc;">This is heading</h2>
+        <p>This is some content inside the modal.</p>
+        <button style="border: 1px solid #f44336; padding: 10px 20px; background-color: #f44336; color: #fff; cursor: pointer; float: right;">CTA</button>
+      </div>
+    </div>
+    
+    <button onclick="document.getElementById('myModal').style.display='block'" style="border: 1px solid #ccc; padding: 20px 20px; background-color: #fff; cursor: pointer;">Open Modal</button>
+    
+    <!-- Button for Mobile Mode -->
+    <button id="openMobileModalButton">Open Mobile Modal</button>
+
+    <!-- Mobile Modal -->
+    <div id="mobileModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeMobileModalButton">&times;</span>
+        <p>Mobile Mode</p>
+      </div>
+    </div>
+
+    <!-- Button for Desktop Mode -->
+    <button id="openDesktopModalButton">Open Desktop Modal</button>
+
+    <!-- Desktop Modal -->
+    <div id="desktopModal" class="modall">
+      <div class="modal-contentt">
+        <span class="closee" id="closeDesktopModalButton">&times;</span>
+        <p>Desktop Mode</p>
+      </div>
+    </div>
+    <h3 id="shadow">Shadow dom with siblings</h3>
+    <!-- <div id="app"></div> -->
+    <div id="myDiv">
+      <p class="styled-paragraph">This is a paragraph with basic styling.</p>
+    </div>
+    <button id="addStylesButton">Add Additional Styles</button>
+    <h3>This form changes id dynamically but has name attribute</h3>
+    <form id="dynamic_form">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name_1"
+        onchange="changeFieldId(this);"
+        required
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email_1"
+        onchange="changeFieldId(this);"
+        required
+      />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- <h3>This form changes id dynamically</h3>
+<form id="dynamic_form">
+  <label for="name">Name:</label>
+  <input type="text" id="name" onchange="changeFieldId(this);" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" onchange="changeFieldId(this);" required>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+<h3>This form is without name and id</h3>
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<select name="" >
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<form id="Simple_form">
+  <label for="name">Name:</label>
+  <input type="text" name="">
+  <br>
+  <label for="email">Email:</label>
+  <input type="email">
+  <br>
+  <input type="submit" value="Submit">
+</form> -->
+    <!-- three-blcok -->
+    <div class="container my-5 py-2">
+      <form id="sample-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email_123_abc"
+          name="email"
+          required
+        /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <label for="checkbox">Check this:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox" /><br /><br />
+        <label for="checkbox">Check that:</label>
+        <input type="checkbox" id="checkbox2" name="checkbox" /><br /><br />
+
+        <label for="radio1">Radio 1:</label>
+        <input type="radio" id="radio1" name="radio" value="option1" checked />
+        <label for="radio2">Radio 2:</label>
+        <input
+          type="radio"
+          id="radio2"
+          name="radio"
+          value="option2"
+        /><br /><br />
+
+        <label for="select">Select:</label>
+        <select id="select" name="select">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option></select
+        ><br /><br />
+
+        <label for="textarea">Textarea:</label><br />
+        <textarea id="textarea" name="textarea" rows="4" cols="30"></textarea
+        ><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+      <h2 class="text-center font-weight-bold my-5">
+        Smartest protection for your site
+      </h2>
+      <div class="row">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+        >
+          <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto" />
+          <h4>Anti-spam</h4>
+          <p>Lorem ipsum dolor sit amet porro his no his deleniti</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+        >
+          <img
+            src="img/smart-protect-2.jpg"
+            alt="Phishing Detect"
+            class="mx-auto"
+          />
+          <h4>Phishing Detect</h4>
+          <p>Ne error antiopam usu. Sed vocen concludaturque ea</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center"
+        >
+          <img src="img/smart-protect-3.jpg" alt="Smart Scan" class="mx-auto" />
+          <h4>Smart Scan</h4>
+          <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
+        </div>
+      </div>
+    </div>
+    <!-- feature (skew background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
+      <div class="container my-5">
+        <div class="row justify-content-between text-center text-md-left">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-md-6"
+          >
+            <h2 class="font-weight-bold">Take a look inside</h2>
+            <p class="my-4">
+              Te iisque labitur eos, nec sale argumentum scribentur no, <br />
+              augue disputando in vim. Erat fugit sit at, ius lorem deserunt
+              deterruisset no.
+            </p>
+            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue"
+              >Learn More</a
+            >
+          </div>
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-md-6 align-self-center"
+          >
+            <img
+              src="img/feature-1.png"
+              alt="Take a look inside"
+              class="mx-auto d-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- feature (green background) -->
+    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
+      <div class="container">
+        <div class="row justify-content-between text-center text-md-left">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-md-6 flex-md-last"
+          >
+            <h2 class="font-weight-bold">Safe and reliable</h2>
+            <p class="my-4">
+              Duo suas detracto maiestatis ad, commodo lucilius invenire nec ad,
+              <br />
+              eum et oratio disputationi. Falli lobortis his ad
+            </p>
+            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue"
+              >Learn More</a
+            >
+          </div>
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            class="col-md-6 align-self-center flex-md-first"
+          >
+            <img
+              src="img/feature-2.png"
+              alt="Safe and reliable"
+              class="mx-auto d-block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- price table -->
+    <div class="container my-5 py-2" id="price-table">
+      <h2 class="text-center font-weight-bold d-block mb-3">
+        Check our pricing
+      </h2>
+      <div class="row">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+          <h4 class="my-4">STARTUP</h4>
+          <p class="font-weight-bold">
+            $ <span class="display-2 font-weight-bold">0</span> / MO.
+          </p>
+          <ul class="list-unstyled">
+            <li>Up to 5 Documents</li>
+            <li>Up to 3 Reviews</li>
+            <li>5 team Members</li>
+            <li>Limited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost"
+            >Get Free</a
+          >
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5 rounded"
+          id="price-table__premium"
+        >
+          <h4 class="my-4">PREMIUM</h4>
+          <p class="font-weight-bold">
+            $ <span class="display-2 font-weight-bold">10</span> / MO.
+          </p>
+          <ul class="list-unstyled">
+            <li>Up to 15 Documents</li>
+            <li>Up to 10 Reviews</li>
+            <li>25 team Members</li>
+            <li>Limited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green"
+            >Get Free</a
+          >
+        </div>
+        <div
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          class="col-md-4 text-center py-4 mt-5"
+        >
+          <h4 class="my-4">PROFESSIONAL</h4>
+          <p class="font-weight-bold">
+            $ <span class="display-2 font-weight-bold">30</span> / MO.
+          </p>
+          <ul class="list-unstyled">
+            <li>Unlimited Documents</li>
+            <li>Unlimited Reviews</li>
+            <li>Unlimited Members</li>
+            <li>Unlimited Support</li>
+          </ul>
+          <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost"
+            >Get Free</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- client -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-1.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-2.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-3.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-4.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-5.png" class="mx-auto d-block" />
+          </div>
+          <div class="col-sm-4 col-md-2 py-2 align-self-center">
+            <img src="img/client-6.png" class="mx-auto d-block" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <div
+      class="jumbotron jumbotron-fluid"
+      id="contact"
+      style="background-image: url(img/contact-bk.jpg)"
+    >
+      <div class="container my-5">
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-white">
+            <h2 class="font-weight-bold">Contact Us</h2>
+            <p class="my-4">
+              Te iisque labitur eos, nec sale argumentum scribentur,
+              <br />
+              augue disputando in vim. Erat fugit sit at, ius lorem.
+            </p>
+            <ul class="list-unstyled">
+              <li>Email : company_email@com</li>
+              <li>Phone : 361-688-5824</li>
+              <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <form id="contactUs">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="name" class="form-control" id="name" />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="Email">Your Email</label>
+                  <input type="email" class="form-control" id="Email" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-md-6 text-white align-self-center text-center text-md-left my-2"
+          >
+            Copyright © 2018 Chen, Yi-Ya.
+          </div>
+          <div
+            class="col-md-6 align-self-center text-center text-md-right my-2"
+            id="social-media"
+          >
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-medium" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="d-inline-block text-center ml-2">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({});
+    </script>
+    <!-- <script>
+        setTimeout(() => {
+          // Get the container element where you want to attach the Shadow DOM
+        const container = document.createElement('div');
+    
+    // Create a Shadow DOM root
+    const shadowRoot = container.attachShadow({ mode: 'open' });
+
+    // Create a parent element within the Shadow DOM
+    const parentElement = document.createElement('div');
+    parentElement.innerHTML = '<h2>This is a Shadow DOM element</h2>';
+    shadowRoot.appendChild(parentElement);
+
+    // Create a sibling element within the Shadow DOM
+    const siblingElement = document.createElement('div');
+    siblingElement.innerHTML = '<p>This is a sibling element within the Shadow DOM</p>';
+    shadowRoot.appendChild(siblingElement);
+
+    // Create another sibling element within the Shadow DOM
+    const anotherSiblingElement = document.createElement('div');
+    anotherSiblingElement.innerHTML = '<p>This is another sibling element within the Shadow DOM</p>';
+    shadowRoot.appendChild(anotherSiblingElement);
+
+    // Create a comment node for the parent element
+    const commentNode = document.createComment('This is a comment on the parent of the Shadow DOM');
+
+    // Append the comment node to the parent element outside the Shadow DOM
+    container.appendChild(commentNode);
+    document.getElementById('shadow').append(container);
+        },10000);
+        
+      </script> -->
+    <script>
+      // Get references to the mobile and desktop buttons and modals
+      const openMobileModalButton = document.getElementById(
+        "openMobileModalButton"
+      );
+      const closeMobileModalButton = document.getElementById(
+        "closeMobileModalButton"
+      );
+      const mobileModal = document.getElementById("mobileModal");
+
+      const openDesktopModalButton = document.getElementById(
+        "openDesktopModalButton"
+      );
+      const closeDesktopModalButton = document.getElementById(
+        "closeDesktopModalButton"
+      );
+      const desktopModal = document.getElementById("desktopModal");
+
+      // Function to open the mobile modal
+      function openMobileModal() {
+        mobileModal.style.display = "block";
+      }
+
+      // Function to close the mobile modal
+      function closeMobileModal() {
+        mobileModal.style.display = "none";
+      }
+
+      // Function to open the desktop modal
+      function openDesktopModal() {
+        desktopModal.style.display = "block";
+      }
+
+      // Function to close the desktop modal
+      function closeDesktopModal() {
+        desktopModal.style.display = "none";
+      }
+
+      // Event listeners for mobile modal
+      openMobileModalButton.addEventListener("click", openMobileModal);
+      closeMobileModalButton.addEventListener("click", closeMobileModal);
+
+      // Event listeners for desktop modal
+      openDesktopModalButton.addEventListener("click", openDesktopModal);
+      closeDesktopModalButton.addEventListener("click", closeDesktopModal);
+    </script>
+    <!-- Link to your JavaScript file -->
+    <script>
+      function changeFieldId(field) {
+        // Generate a random ID
+        var newId = field.id + "_" + Math.floor(Math.random() * 1000);
+
+        // Change the field's ID
+        field.id = newId;
+
+        // Display the new field ID (optional)
+        console.log("Field ID changed to: " + newId);
+      }
+    </script>
+    <script>
+      // Function to add additional styles to the paragraph
+      function addAdditionalStyles() {
+        // Get the stylesheet
+        const styleSheet = document.styleSheets[0]; // Index 0 refers to the first stylesheet in the document
+
+        // Define the additional style rules
+        const additionalStyles = `
+          .styled-paragraph {
+              font-weight: bold;
+              background-color: #ffcc00;
+          }
+      `;
+
+        // Add the additional styles using the insertRule method
+        if (styleSheet.insertRule) {
+          styleSheet.insertRule(additionalStyles, 0);
+        } else if (styleSheet.addRule) {
+          // For Internet Explorer support
+          styleSheet.addRule(".styled-paragraph", "font-weight: bold");
+          styleSheet.addRule(".styled-paragraph", "background-color: #ffcc00");
+        }
+      }
+
+      // Add event listener to the button
+      const addStylesButton = document.getElementById("addStylesButton");
+      addStylesButton.addEventListener("click", addAdditionalStyles);
+    </script>
+  </body>
+</html>
